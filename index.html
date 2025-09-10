@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Jam: VIP Experience</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0c0a18;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cg fill="%231a162d" fill-opacity="0.4"%3E%3Ccircle cx="50" cy="50" r="1" /%3E%3Ccircle cx="10" cy="10" r="1" /%3E%3Ccircle cx="90" cy="90" r="1" /%3E%3Ccircle cx="10" cy="90" r="1" /%3E%3Ccircle cx="90" cy="10" r="1" /%3E%3Ccircle cx="30" cy="70" r="1" /%3E%3Ccircle cx="70" cy="30" r="1" /%3E%3Ccircle cx="30" cy="30" r="1" /%3E%3Ccircle cx="70" cy="70" r="1" /%3E%3Ccircle cx="50" cy="10" r="1" /%3E%3Ccircle cx="10" cy="50" r="1" /%3E%3Ccircle cx="90" cy="50" r="1" /%3E%3Ccircle cx="50" cy="90" r="1" /%3E%3C/g%3E%3C/svg%3E');
+            font-family: 'Roboto', sans-serif;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .form-input {
+            background-color: rgba(12, 10, 24, 0.8);
+            border: 1px solid #f97316; /* Orange-500 */
+            color: #f3f4f6; /* Gray-100 */
+            transition: all 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(249, 115, 22, 0.7);
+            border-color: #fb923c; /* Orange-400 */
+        }
+        .btn-transmit {
+            background-color: #f97316; /* Orange-500 */
+            color: #0c0a18;
+            transition: all 0.3s ease;
+        }
+        .btn-transmit:hover {
+            background-color: #fb923c; /* Orange-400 */
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.8);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid #fb923c; /* Orange-400 */
+            color: #fb923c; /* Orange-400 */
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: rgba(251, 146, 60, 0.1);
+            color: #fcd34d; /* Yellow-300 */
+            border-color: #fcd34d; /* Yellow-300 */
+            box-shadow: 0 0 15px rgba(252, 211, 77, 0.6);
+        }
+    </style>
+</head>
+<body class="text-gray-200 min-h-screen flex items-center justify-center p-4">
+
+    <main class="w-full max-w-3xl bg-gray-900 bg-opacity-80 backdrop-blur-sm border border-orange-500 rounded-lg shadow-2xl shadow-orange-500/10 p-6 md:p-10">
+        
+        <header class="text-center mb-8">
+            <svg class="w-20 h-20 mx-auto mb-4 text-orange-500" fill="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480 C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
+                <path d="M352.51,139.333l-74.907,31.6l-21.6-50.4l-21.6,50.4l-74.907-31.6L184.288,256l-24.795,116.667l74.907-31.6l21.6,50.4 l21.6-50.4l74.907,31.6L327.712,256L352.51,139.333z M256,320c-35.346,0-64-28.654-64-64s28.654-64,64-64s64,28.654,64,64 S291.346,320,256,320z"/>
+            </svg>
+            <h1 class="font-orbitron text-3xl md:text-5xl font-bold text-yellow-400 tracking-wider">RESISTANCE JAM</h1>
+            <h2 class="font-orbitron text-xl md:text-2xl text-orange-500 mt-2">VIP HIGH COMMAND</h2>
+        </header>
+
+        <section class="mb-8 p-4 border border-dashed border-gray-600 rounded-md text-center">
+            <h3 class="font-orbitron text-xl text-orange-500 mb-2">MISSION BRIEFING</h3>
+            <p><span class="font-bold">DATE:</span> Saturday, September 20th</p>
+            <p><span class="font-bold">TIME:</span> 1800 - 2300 Hours / 6:00 PM - 11:00 PM</p>
+            <p><span class="font-bold">LOCATION:</span> Boman Twin Event Center</p>
+            <a href="https://www.google.com/maps/dir//Boman+Twin+Event+Center,+2909+S+Sheridan+Rd,+Tulsa,+OK+74129/@36.1210479,-95.9064509,16z/data=!4m17!1m7!3m6!1s0x87b6ed5c368d8a99:0xdf92c1482b39a08!2sBoman+Twin+Event+Center!8m2!3d36.1210479!4d-95.9038706!16s%2Fg%2F11tf39mq5f!4m8!1m0!1m5!1m1!1s0x87b6ed5c368d8a99:0xdf92c1482b39a08!2m2!1d-95.9038706!2d36.1210479!3e3?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-secondary font-orbitron font-bold text-sm py-2 px-6 rounded-md uppercase tracking-widest mt-4 inline-block">
+                View Sector Coordinates
+            </a>
+        </section>
+
+        <section class="mb-10 text-lg text-left space-y-4">
+            <p>
+                <span class="font-bold text-yellow-400">High Command Transmission:</span> Operatives with VIP clearance are granted access to exclusive strategic advantages at the Resistance Jam. Your <span class="font-bold">VIP High Command Pass</span> unlocks the following perks:
+            </p>
+            <ul class="list-disc list-inside space-y-3 pl-4 text-orange-400">
+                <li><span class="text-gray-200">Full clearance to the <span class="font-bold">High Command Lounge</span> for a private briefing with the performing rebel cells.</span></li>
+                <li><span class="text-gray-200">Unlimited rations at <span class="font-bold">The Spice Mines Dab Bar</span> throughout the operation.</span></li>
+                <li><span class="text-gray-200">Entry into the <span class="font-bold">Alliance contraband cache drawing</span>, containing vital supplies for your next supply run.</span></li>
+                <li><span class="text-gray-200">One winning operative will secure <span class="font-bold text-yellow-400">six access codes</span> to the secret After-Action party.</span></li>
+                <li><span class="text-gray-200"><span class="font-bold">Priority Access Credentials</span>, allowing you to bypass queues at both the main event and the after-party rendezvous point.</span></li>
+            </ul>
+            <p>
+                This high-clearance pass requires a contribution of <span class="font-bold text-yellow-400">25 Galactic Credits ($25)</span>, but the strategic advantages are invaluable. This is a restricted mission for operatives <span class="font-bold">18 standard cycles or older.</span> Identification datapads will be scanned at the entry port.
+            </p>
+             <p>
+                Transmit your details on the datapad below and you will be redirected to the secure Alliance payment portal. All credit transactions are handled securely with the support of PayPal. We look forward to seeing you there. <span class="font-bold text-yellow-400">May the Force be with you.</span>
+            </p>
+        </section>
+
+        <section class="bg-gray-900 bg-opacity-80 backdrop-blur-sm border border-yellow-400 rounded-lg shadow-2xl shadow-yellow-400/10 p-6 md:p-10">
+            
+            <header class="text-center mb-8">
+                <h2 class="font-orbitron text-2xl md:text-3xl font-bold text-yellow-400 tracking-wider">SECURE VIP HIGH COMMAND PASS</h2>
+                <p class="text-orange-500 mt-2 text-lg">25 Galactic Credits</p>
+            </header>
+
+            <form id="ticket-purchase-form" action="https://formspree.io/f/mzzaovzb" method="POST" class="space-y-6">
+                
+                <div>
+                    <label for="ticket-name" class="block mb-2 text-sm font-bold text-orange-400 uppercase tracking-wider">Name / Callsign:</label>
+                    <input type="text" id="ticket-name" name="Name" class="form-input w-full p-3 rounded-md" placeholder="Your full name" required>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="ticket-email" class="block mb-2 text-sm font-bold text-orange-400 uppercase tracking-wider">Email (For Ticket Delivery):</label>
+                        <input type="email" id="ticket-email" name="Email" class="form-input w-full p-3 rounded-md" placeholder="your.email@alliance.net" required>
+                    </div>
+                    
+                    <div>
+                        <label for="ticket-phone" class="block mb-2 text-sm font-bold text-orange-400 uppercase tracking-wider">Phone Number:</label>
+                        <input type="tel" id="ticket-phone" name="Phone Number" class="form-input w-full p-3 rounded-md" placeholder="555-123-4567">
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn-transmit font-orbitron font-bold text-lg py-3 px-8 rounded-md uppercase tracking-widest">
+                        Proceed to Payment
+                    </button>
+                </div>
+            </form>
+            
+            <div id="ticket-status" class="text-center mt-6 text-lg"></div>
+
+        </section>
+    </main>
+
+    <script>
+        // SCRIPT FOR TICKET PURCHASE FORM
+        var ticketForm = document.getElementById("ticket-purchase-form");
+        var payPalLink = "https://www.paypal.com/ncp/payment/KUAYKDKJVCL8W";
+
+        async function handleTicketSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("ticket-status");
+            var data = new FormData(event.target);
+            
+            status.innerHTML = '<p class="text-yellow-400">Encrypting transmission... Stand by.</p>';
+
+            fetch(event.target.action, {
+                method: ticketForm.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Success! Data sent to Formspree. Now redirect to PayPal.
+                    status.innerHTML = '<p class="text-green-400">Info received! Redirecting to secure payment portal...</p>';
+                    // Redirect after a short delay to allow user to read the message
+                    setTimeout(() => {
+                        window.location.href = payPalLink;
+                    }, 1500);
+                    ticketForm.reset();
+                } else {
+                    // Handle Formspree errors
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerHTML = '<p class="text-red-500">Error: Transmission failed. Please check your data and try again.</p>';
+                        }
+                    })
+                }
+            }).catch(error => {
+                // Handle network errors
+                status.innerHTML = '<p class="text-red-500">Error: Transmission failed. Comms are down. Please try again later.</p>';
+            });
+        }
+        
+        ticketForm.addEventListener("submit", handleTicketSubmit);
+    </script>
+
+</body>
+</html>
